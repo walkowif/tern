@@ -74,7 +74,7 @@ jobs:
   linter:
     if: github.event_name != 'push'
     name: SuperLinter 🦸‍♀️
-    uses: insightsengineering/r.pkg.template/.github/workflows/linter.yaml@main
+    uses: insightsengineering/r.pkg.template/.github/workflows/linter.yaml@lint-all-files-on-workflow-distpach
   # roxygen:
   #   name: Roxygen 🅾
   #   uses: insightsengineering/r.pkg.template/.github/workflows/roxygen.yaml@main
