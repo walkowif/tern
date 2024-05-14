@@ -33,8 +33,8 @@ control_incidence_rate <- function(conf_level = 0.95,
 
   list(
     conf_level = conf_level,
-    conf_type = conf_type,
-    input_time_unit = input_time_unit,
+                  conf_type = conf_type,
+                  input_time_unit = input_time_unit,
     num_pt_year = num_pt_year
   )
 }
