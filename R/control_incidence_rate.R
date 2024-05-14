@@ -21,8 +21,10 @@
 #'
 #' @export
 control_incidence_rate <- function(conf_level = 0.95,
-                                   conf_type = c("normal", "normal_log", "exact", "byar"),
-                                   input_time_unit = c("year", "day", "week", "month"),
+                                   conf_type = c(
+                                    "normal", "normal_log", "exact", "byar"),
+                                   input_time_unit = c("year",
+"day", "week", "month"),
                                    num_pt_year = 100) {
   conf_type <- match.arg(conf_type)
   input_time_unit <- match.arg(input_time_unit)
