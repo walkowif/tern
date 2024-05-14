@@ -72,7 +72,7 @@ jobs:
   #   secrets:
   #     REPO_GITHUB_TOKEN: ${{ secrets.REPO_GITHUB_TOKEN }}
   linter:
-    if: github.event_name != 'push'
+    # if: github.event_name != 'push'
     name: SuperLinter 🦸‍♀️
     uses: insightsengineering/r.pkg.template/.github/workflows/linter.yaml@lint-all-files-for-workflow-dispatch
   # roxygen:
