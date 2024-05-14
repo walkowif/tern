@@ -21,7 +21,7 @@
 #'
 #' @export
 control_incidence_rate <- function(conf_level = 0.95,
-                                   conf_type = c(
+conf_type = c(
                                     "normal", "normal_log", "exact", "byar"),
                                    input_time_unit = c("year",
 "day", "week", "month"),
