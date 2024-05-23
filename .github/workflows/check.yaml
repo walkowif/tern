@@ -9,13 +9,13 @@ on:
 jobs:
   wasm:
     name: WASM
-    # uses: insightsengineering/r.pkg.template/.github/workflows/wasm.yaml@wasm-poc
-    uses: r-wasm/actions/.github/workflows/deploy-cran-repo.yml@v1
-    with:
-      packages: '.'
-    permissions:
-      # To download GitHub Packages within action
-      repository-projects: read
-      # For publishing to pages environment
-      pages: write
-      id-token: write
+    uses: insightsengineering/r.pkg.template/.github/workflows/wasm.yaml@wasm-poc
+    # uses: r-wasm/actions/.github/workflows/deploy-cran-repo.yml@v1
+    # with:
+    #   packages: '.'
+    # permissions:
+    #   # To download GitHub Packages within action
+    #   repository-projects: read
+    #   # For publishing to pages environment
+    #   pages: write
+    #   id-token: write
