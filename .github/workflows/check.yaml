@@ -10,12 +10,18 @@ jobs:
   wasm:
     name: WASM
     uses: insightsengineering/r.pkg.template/.github/workflows/wasm.yaml@wasm-poc
-    # uses: r-wasm/actions/.github/workflows/deploy-cran-repo.yml@v1
-    # with:
-    #   packages: '.'
-    # permissions:
-    #   # To download GitHub Packages within action
-    #   repository-projects: read
-    #   # For publishing to pages environment
-    #   pages: write
-    #   id-token: write
+
+  wasm-repo:
+    name: WASM repo
+    uses: r-wasm/actions/.github/workflows/deploy-cran-repo.yml@v1
+    with:
+      packages: |
+        insightsengineering/tern@v0.9.4
+        insightsengineering/teal.logger@v0.2.0
+        insightsengineering/chevron@v0.2.6
+    permissions:
+      # To download GitHub Packages within action
+      repository-projects: read
+      # For publishing to pages environment
+      pages: write
+      id-token: write
