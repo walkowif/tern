@@ -16,6 +16,5 @@ jobs:
           curl -vvv https://pharmaverse.slack.com
 
   links:
-    if: github.event_name != 'push'
     name: Check URLs 🌐
     uses: insightsengineering/r.pkg.template/.github/workflows/links.yaml@main
