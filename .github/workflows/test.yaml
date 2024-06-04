@@ -15,6 +15,7 @@ jobs:
     steps:
       - name: Debug
         run: |
+          apt update && apt install -yq curl
           curl -vvv https://pharmaverse.slack.com
 
   links:
