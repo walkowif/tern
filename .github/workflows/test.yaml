@@ -20,4 +20,4 @@ jobs:
 
   links:
     name: Check URLs 🌐
-    uses: insightsengineering/r.pkg.template/.github/workflows/links.yaml@main
+    uses: insightsengineering/r.pkg.template/.github/workflows/links.yaml@debug-urlchecker
