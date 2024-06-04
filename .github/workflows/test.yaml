@@ -13,9 +13,9 @@ jobs:
     steps:
       - name: Debug
         run: |
-          apt update && apt install -yq curl
           curl -vvv https://pharmaverse.slack.com
 
-  spelling:
-    name: Spell Check 🆎
-    uses: insightsengineering/r.pkg.template/.github/workflows/spelling.yaml@main
+  links:
+    if: github.event_name != 'push'
+    name: Check URLs 🌐
+    uses: insightsengineering/r.pkg.template/.github/workflows/links.yaml@main
