@@ -93,8 +93,8 @@ This package is a result of a joint efforts by many developers and stakeholders.
 [![Forkers repo roster for tern](https://reporoster.com/forks/insightsengineering/tern)](https://github.com/insightsengineering/tern/network/members)
 
 
-(https://doi.org/10.1002/cpt.1450).
+[test1](https://doi.org/10.1002/cpt.1450).
 
-(https://doi.org/10.1002/sim.8756).
+[test2](https://doi.org/10.1002/sim.8756).
 
-(https://doi.org/10.1111/bcp.15200).
+[test3](https://doi.org/10.1111/bcp.15200).
