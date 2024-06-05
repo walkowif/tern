@@ -25,7 +25,7 @@ jobs:
   custom-script:
     runs-on: ubuntu-latest
     container:
-      image: ghcr.io/${{ github.repository_owner }}/rbmi:latest
+      image: rocker/r-base:latest
 
     steps:
       - name: Checkout
