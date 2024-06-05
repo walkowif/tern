@@ -10,8 +10,7 @@ on:
         description: Command to run
         required: false
         default: |
-          echo "<b>Hello!</b>" >> test.html
-          echo "<b>Hello!</b>" >> test2.html
+          Rscript -e 'cat("test1")'
         type: string
       artifact-wildcard:
         description: Artifact wildcard
@@ -19,10 +18,10 @@ on:
         default: '*.html'
         type: string
 
-name: Custom script runner
+name: Custom command runner
 
 jobs:
-  custom-script:
+  custom-command:
     runs-on: ubuntu-latest
     container:
       image: rocker/r-base:latest
