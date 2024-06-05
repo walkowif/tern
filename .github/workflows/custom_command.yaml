@@ -1,0 +1,32 @@
+
+
+on:
+  push:
+    branches:
+      - add-custom-command-workflow
+  workflow_dispatch:
+    inputs:
+      command-to-run:
+        description: Command to run
+        required: false
+        default: |
+          echo "Hello!"
+        type: string
+
+name: Custom script runner
+
+jobs:
+  custom-script:
+    runs-on: ubuntu-latest
+    container:
+      image: ghcr.io/${{ github.repository_owner }}/rbmi:latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Run command
+        run: |
+          ${{ inputs.command-to-run }}
+        shell: bash
+
