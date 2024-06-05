@@ -91,3 +91,10 @@ This package is a result of a joint efforts by many developers and stakeholders.
 [![Stargazers repo roster for tern](https://reporoster.com/stars/insightsengineering/tern)](https://github.com/insightsengineering/tern/stargazers)
 
 [![Forkers repo roster for tern](https://reporoster.com/forks/insightsengineering/tern)](https://github.com/insightsengineering/tern/network/members)
+
+
+(https://doi.org/10.1002/cpt.1450).
+
+(https://doi.org/10.1002/sim.8756).
+
+(https://doi.org/10.1111/bcp.15200).

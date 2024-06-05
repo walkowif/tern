@@ -90,7 +90,7 @@ jobs:
   links:
     # if: github.event_name != 'push'
     name: Check URLs 🌐
-    uses: insightsengineering/r.pkg.template/.github/workflows/links.yaml@add-urlchecker
+    uses: insightsengineering/r.pkg.template/.github/workflows/links.yaml@main
   # vbump:
   #   name: Version Bump 🤜🤛
   #   if: github.event_name == 'push'
