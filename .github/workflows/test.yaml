@@ -1,0 +1,22 @@
+---
+name: Simple workflow
+
+on:
+  push:
+    branches:
+      - test-ubuntu-runner
+
+jobs:
+  build-and-check:
+    name: Build R package
+    runs-on: ubuntu-latest
+    steps:
+      - name: Hello from R! 💬
+        run: |
+          Rscript --version
+          R --version
+        shell: bash
+
+      - name: Hello from R! 💬
+        run: cat("Hello from R! 👋")
+        shell: Rscript {0}
