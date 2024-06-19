@@ -4,7 +4,7 @@ name: Check 🛠
 on:
   push:
     branches:
-      - wasm-poc
+      - wasm-poc1
 
 jobs:
   wasm:
