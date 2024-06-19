@@ -56,5 +56,3 @@ jobs:
     name: Build WASM
     needs: release
     uses: insightsengineering/r.pkg.template/.github/workflows/wasm.yaml@wasm-poc
-    secrets:
-      REPO_GITHUB_TOKEN: ${{ secrets.REPO_GITHUB_TOKEN }}
