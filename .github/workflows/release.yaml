@@ -19,7 +19,7 @@ jobs:
   validation:
     name: R Package Validation report 📃
     needs: release
-    uses: insightsengineering/r.pkg.template/.github/workflows/validation.yaml@debug-quarto
+    uses: insightsengineering/r.pkg.template/.github/workflows/validation.yaml@main
     secrets:
       REPO_GITHUB_TOKEN: ${{ secrets.REPO_GITHUB_TOKEN }}
   release:
@@ -52,7 +52,7 @@ jobs:
   #   uses: insightsengineering/r.pkg.template/.github/workflows/test-coverage.yaml@main
   #   secrets:
   #     REPO_GITHUB_TOKEN: ${{ secrets.REPO_GITHUB_TOKEN }}
-  # build-wasm:
-  #   name: Build WASM 🧑‍🏭
-  #   needs: release
-  #   uses: insightsengineering/r.pkg.template/.github/workflows/wasm.yaml@wasm-poc
+  build-wasm:
+    name: Build WASM 🧑‍🏭
+    needs: release
+    uses: insightsengineering/r.pkg.template/.github/workflows/wasm.yaml@wasm-poc
