@@ -41,7 +41,7 @@ jobs:
         checking top-level files .* NOTE
       unit-test-report-brand: >-
         https://raw.githubusercontent.com/insightsengineering/hex-stickers/main/thumbs/tern.png
-  r-cmd-non-cran:
+  build-non-cran:
     name: Build package and reports (non-CRAN) 🧬
     needs: [release, docs]
     uses: insightsengineering/r.pkg.template/.github/workflows/build-check-install.yaml@non-cran-unit-test-report
