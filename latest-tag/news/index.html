@@ -10,7 +10,7 @@
     
     <a class="navbar-brand me-2" href="../index.html">tern</a>
 
-    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.9.4.9007</small>
+    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.9.4.9010</small>
 
     <div style="width: 140px; margin-left: 0.5rem;"> <small class="nav-text text-muted me-auto">part of</small> <img src="https://github.com/insightsengineering/hex-stickers/blob/main/PNG/nest.png?raw=true" alt="NEST" style="height: 30px;"><a href="https://pharmaverse.org/" class="external-link"><img src="https://github.com/insightsengineering/hex-stickers/blob/main/PNG/pharmaverse.png?raw=true" alt="pharmaverse" style="height: 28px;"></a> </div>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -40,6 +40,7 @@
           data-bs-toggle="dropdown" role="button"
           aria-expanded="false" aria-haspopup="true"
           id="dropdown-versions">Versions</a> <div class="dropdown-menu" aria-labelledby="dropdown-versions"> <a class="dropdown-item" data-toggle="tooltip" title="" href="https://walkowif.github.io/tern/latest-tag">latest-tag</a>
+<a class="dropdown-item" data-toggle="tooltip" title="" href="https://walkowif.github.io/tern/v0.0.23">v0.0.23</a>
 <a class="dropdown-item" data-toggle="tooltip" title="" href="https://walkowif.github.io/tern/v0.0.12">v0.0.12</a>
 <a class="dropdown-item" data-toggle="tooltip" title="" href="https://walkowif.github.io/tern/v0.0.11">v0.0.11</a> </div></li>
 <!-- end dropdown for versions -->
@@ -48,6 +49,7 @@
   <div class="dropdown-menu" aria-labelledby="dropdown-reports">
     <a class="dropdown-item" href="../coverage-report/">Coverage report</a>
     <a class="dropdown-item" href="../unit-test-report/">Unit test report</a>
+    <a class="dropdown-item" href="../unit-test-report-non-cran/">Non-CRAN unit test report</a>
   </div>
 </li>
       </ul><form class="form-inline my-2 my-lg-0" role="search">
@@ -71,19 +73,21 @@
     </div>
 
     <div class="section level2">
-<h2 class="pkg-version" data-toc-text="0.9.4.9007" id="tern-0949007">tern 0.9.4.9007<a class="anchor" aria-label="anchor" href="#tern-0949007"></a></h2>
+<h2 class="pkg-version" data-toc-text="0.9.4.9010" id="tern-0949010">tern 0.9.4.9010<a class="anchor" aria-label="anchor" href="#tern-0949010"></a></h2>
 <div class="section level4">
-<h4 id="enhancements-0-9-4-9007">Enhancements<a class="anchor" aria-label="anchor" href="#enhancements-0-9-4-9007"></a></h4>
+<h4 id="enhancements-0-9-4-9010">Enhancements<a class="anchor" aria-label="anchor" href="#enhancements-0-9-4-9010"></a></h4>
 <ul><li>Added <code>facet_var</code> to <code>g_lineplot</code> to allow plot faceting by a factor variable.</li>
 <li>Updated <code>g_lineplot</code> legend to follow factor levels set by users.</li>
 <li>Added examples and tests for <code>label_all</code> parameter to <code>extract_survival_biomarkers</code> and <code>extract_survival_subgroups</code>.</li>
+<li>Added the <code>xticks</code>, <code>xlim</code>, and <code>ylim</code> arguments to <code>g_lineplot</code> to allow for customization of the x and y axes.</li>
 </ul></div>
 <div class="section level4">
-<h4 id="bug-fixes-0-9-4-9007">Bug Fixes<a class="anchor" aria-label="anchor" href="#bug-fixes-0-9-4-9007"></a></h4>
+<h4 id="bug-fixes-0-9-4-9010">Bug Fixes<a class="anchor" aria-label="anchor" href="#bug-fixes-0-9-4-9010"></a></h4>
 <ul><li>Fixed bug in <code>s_ancova</code> that prevented statistics from being printed when arm levels include special characters.</li>
+<li>Fixed bug in <code>decorate_grob</code> that prevented the right margins to be respected when adding title and footers decorations.</li>
 </ul></div>
 <div class="section level4">
-<h4 id="miscellaneous-0-9-4-9007">Miscellaneous<a class="anchor" aria-label="anchor" href="#miscellaneous-0-9-4-9007"></a></h4>
+<h4 id="miscellaneous-0-9-4-9010">Miscellaneous<a class="anchor" aria-label="anchor" href="#miscellaneous-0-9-4-9010"></a></h4>
 <ul><li>Began deprecation of the unused <code>label_all</code> parameter to <code>tabulate_survival_biomarkers</code> and <code>tabulate_survival_subgroups</code>, with redirection to the same parameter in their associated <code>extract_*</code> functions.</li>
 </ul></div>
 </div>
