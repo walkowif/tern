@@ -60,6 +60,7 @@ jobs:
       unit-test-report-brand: >-
         https://raw.githubusercontent.com/insightsengineering/hex-stickers/main/thumbs/tern.png
       unit-test-report-directory: unit-test-report-non-cran
+      concurrency-group: non-cran
   coverage:
     name: Coverage 📔
     needs: [release, docs]
