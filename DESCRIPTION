@@ -51,7 +51,8 @@ Imports:
     survival (>= 3.2-13),
     tibble (>= 2.0.0),
     tidyr (>= 0.8.3),
-    utils
+    utils,
+    roxygen2 (== 7.3.1.9000)
 Suggests:
     knitr (>= 1.42),
     lattice (>= 0.18-4),
