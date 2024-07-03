@@ -11,6 +11,9 @@ upstream_repos:
   insightsengineering/rtables:
     repo: insightsengineering/rtables
     host: https://github.com
+  jranke/roxygen:
+    repo: jranke/roxygen
+    host: https://github.com
 downstream_repos:
   insightsengineering/biomarker-catalog:
     repo: insightsengineering/biomarker-catalog
