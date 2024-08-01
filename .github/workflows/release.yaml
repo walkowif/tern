@@ -16,4 +16,4 @@ jobs:
   build-wasm:
     name: Build WASM 🧑‍🏭
     needs: release
-    uses: insightsengineering/r.pkg.template/.github/workflows/wasm.yaml@wasm-poc
+    uses: insightsengineering/r.pkg.template/.github/workflows/wasm.yaml@main
