@@ -5,15 +5,15 @@ on:
   push:
     branches:
       - main
-    paths:
-      - "inst/templates/**"
-      - "_pkgdown.*"
-      - DESCRIPTION
-      - "**.md"
-      - "**.Rmd"
-      - "man/**"
-      - "LICENSE.*"
-      - NAMESPACE
+    # paths:
+    #   - "inst/templates/**"
+    #   - "_pkgdown.*"
+    #   - DESCRIPTION
+    #   - "**.md"
+    #   - "**.Rmd"
+    #   - "man/**"
+    #   - "LICENSE.*"
+    #   - NAMESPACE
   pull_request:
     types:
       - opened
@@ -36,7 +36,7 @@ on:
 jobs:
   docs:
     name: Pkgdown Docs 📚
-    uses: insightsengineering/r.pkg.template/.github/workflows/pkgdown.yaml@main
+    uses: insightsengineering/r.pkg.template/.github/workflows/pkgdown.yaml@r-pkgdown-multiversion-replacement
     secrets:
       REPO_GITHUB_TOKEN: ${{ secrets.REPO_GITHUB_TOKEN }}
     with:
