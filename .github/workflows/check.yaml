@@ -18,10 +18,10 @@ on:
 jobs:
   audit:
     name: Audit Dependencies 🕵️‍♂️
-    uses: insightsengineering/r.pkg.template/.github/workflows/audit.yaml@main
+    uses: insightsengineering/r.pkg.template/.github/workflows/audit.yaml@fix/branch-names-on-main
   r-cmd:
     name: R CMD Check 🧬
-    uses: insightsengineering/r.pkg.template/.github/workflows/build-check-install.yaml@main
+    uses: insightsengineering/r.pkg.template/.github/workflows/build-check-install.yaml@fix/branch-names-on-main
     secrets:
       REPO_GITHUB_TOKEN: ${{ secrets.REPO_GITHUB_TOKEN }}
     with:
@@ -43,7 +43,7 @@ jobs:
         https://raw.githubusercontent.com/insightsengineering/hex-stickers/main/thumbs/tern.png
   r-cmd-non-cran:
     name: R CMD Check (non-CRAN) 🧬
-    uses: insightsengineering/r.pkg.template/.github/workflows/build-check-install.yaml@main
+    uses: insightsengineering/r.pkg.template/.github/workflows/build-check-install.yaml@fix/branch-names-on-main
     secrets:
       REPO_GITHUB_TOKEN: ${{ secrets.REPO_GITHUB_TOKEN }}
     with:
@@ -67,7 +67,7 @@ jobs:
         https://raw.githubusercontent.com/insightsengineering/hex-stickers/main/thumbs/tern.png
   coverage:
     name: Coverage 📔
-    uses: insightsengineering/r.pkg.template/.github/workflows/test-coverage.yaml@main
+    uses: insightsengineering/r.pkg.template/.github/workflows/test-coverage.yaml@fix/branch-names-on-main
     secrets:
       REPO_GITHUB_TOKEN: ${{ secrets.REPO_GITHUB_TOKEN }}
     with:
@@ -77,10 +77,10 @@ jobs:
   linter:
     if: github.event_name != 'push'
     name: SuperLinter 🦸‍♀️
-    uses: insightsengineering/r.pkg.template/.github/workflows/linter.yaml@main
+    uses: insightsengineering/r.pkg.template/.github/workflows/linter.yaml@fix/branch-names-on-main
   roxygen:
     name: Roxygen 🅾
-    uses: insightsengineering/r.pkg.template/.github/workflows/roxygen.yaml@main
+    uses: insightsengineering/r.pkg.template/.github/workflows/roxygen.yaml@fix/branch-names-on-main
     secrets:
       REPO_GITHUB_TOKEN: ${{ secrets.REPO_GITHUB_TOKEN }}
     with:
@@ -88,32 +88,32 @@ jobs:
       auto-update: true
   gitleaks:
     name: gitleaks 💧
-    uses: insightsengineering/r.pkg.template/.github/workflows/gitleaks.yaml@main
+    uses: insightsengineering/r.pkg.template/.github/workflows/gitleaks.yaml@fix/branch-names-on-main
   spelling:
     name: Spell Check 🆎
-    uses: insightsengineering/r.pkg.template/.github/workflows/spelling.yaml@main
+    uses: insightsengineering/r.pkg.template/.github/workflows/spelling.yaml@fix/branch-names-on-main
     secrets:
       REPO_GITHUB_TOKEN: ${{ secrets.REPO_GITHUB_TOKEN }}
   links:
     if: github.event_name != 'push'
     name: Check URLs 🌐
-    uses: insightsengineering/r.pkg.template/.github/workflows/links.yaml@main
+    uses: insightsengineering/r.pkg.template/.github/workflows/links.yaml@fix/branch-names-on-main
   vbump:
     name: Version Bump 🤜🤛
     if: github.event_name == 'push'
-    uses: insightsengineering/r.pkg.template/.github/workflows/version-bump.yaml@main
+    uses: insightsengineering/r.pkg.template/.github/workflows/version-bump.yaml@fix/branch-names-on-main
     secrets:
       REPO_GITHUB_TOKEN: ${{ secrets.REPO_GITHUB_TOKEN }}
   version:
     name: Version Check 🏁
-    uses: insightsengineering/r.pkg.template/.github/workflows/version.yaml@main
+    uses: insightsengineering/r.pkg.template/.github/workflows/version.yaml@fix/branch-names-on-main
   licenses:
     name: License Check 🃏
-    uses: insightsengineering/r.pkg.template/.github/workflows/licenses.yaml@main
+    uses: insightsengineering/r.pkg.template/.github/workflows/licenses.yaml@fix/branch-names-on-main
   style:
     if: github.event_name != 'push'
     name: Style Check 👗
-    uses: insightsengineering/r.pkg.template/.github/workflows/style.yaml@main
+    uses: insightsengineering/r.pkg.template/.github/workflows/style.yaml@fix/branch-names-on-main
     with:
       auto-update: true
     secrets:
@@ -121,4 +121,4 @@ jobs:
   grammar:
     if: github.event_name != 'push'
     name: Grammar Check 🔤
-    uses: insightsengineering/r.pkg.template/.github/workflows/grammar.yaml@main
+    uses: insightsengineering/r.pkg.template/.github/workflows/grammar.yaml@fix/branch-names-on-main
